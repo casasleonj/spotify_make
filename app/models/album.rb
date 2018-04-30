@@ -15,4 +15,6 @@ class Album < ApplicationRecord
   belongs_to :artist
 
   has_many :songs, dependent: :destroy
+
+  validates :name, :image_url, :released_at, presence: true
 end

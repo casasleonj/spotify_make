@@ -13,4 +13,6 @@
 
 class Song < ApplicationRecord
   belongs_to :album
+
+  validates :name, :number, :preview_url, presence: true
 end

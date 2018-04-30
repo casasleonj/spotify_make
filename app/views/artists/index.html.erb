@@ -1,0 +1,10 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-10 col-sm-offset-1">
+			<% @artists.each do |artist| %>
+			<div><%= link_to artist.name, artist %> </div>
+			<div><img src="<%= artist.image_url %>" ></div>
+			<% end %>
+		</div>
+	</div>
+</div>
