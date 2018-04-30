@@ -1,8 +1,6 @@
-<h1>Show de un artista en particular</h1>
+<h1>Start Yeah, Show de un artista en particular Make it Real Albums!</h1>
+<h2><%= @artist.name %></h2>
 
-<h1><%= @artist.name %></h1>
-
-<p>Albums! </p>
 <ul>
   <% @artist.albums.each do |album| %>
     <li><%= album.name %></li>
